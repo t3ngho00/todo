@@ -1,7 +1,9 @@
-CREATE TABLE task (
-    id SERIAL PRIMARY KEY,
-    description VARCHAR(255) NOT NULL
+drop table if exists task;
+
+create table task (
+  id serial primary key,
+  description varchar(255) not null
 );
 
-INSERT INTO task (description) VALUES ('My test task');
-INSERT INTO task (description) VALUES ('My another test task');
+insert into task (description) values ('My test task');
+insert into task (description) values ('My other test task');
