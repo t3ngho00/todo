@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 });
 
 // POST endpoint to add a task
-app.post('/add', (req, res) => {
+app.post('/create', (req, res) => {
   const { description } = req.body;
   const pool = openDb();
   pool.query(
